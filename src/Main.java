@@ -15,12 +15,13 @@ public class Main {
                 System.out.println(num);
                 num--;
             }else if (num%2!=0 && num%3!=0 && num%5!=0 && num%7!=0){
+                //Posible numero primo :D
                 int PosibleMultiplo = num/2;
                 while (PosibleMultiplo!=0){
                     while (num%PosibleMultiplo!=0){
                         PosibleMultiplo--;
                     }
-                    if (num%PosibleMultiplo!=0 && PosibleMultiplo==1){
+                    if (num%PosibleMultiplo==0 && PosibleMultiplo==1){
                         System.out.println(num);
                     }
                     PosibleMultiplo = 0;
